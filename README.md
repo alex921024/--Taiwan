@@ -27,7 +27,6 @@
 * **Frontend**: HTML5, CSS3 (Flexbox/Grid), JavaScript (Vanilla), Chart.js
 * **Backend**: Native PHP (7.4+)
 * **Database**: MySQL / MariaDB
-* 
 **Server**: Apache (支援 HTTPS 與 Rewrite) 
 
 
