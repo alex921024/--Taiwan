@@ -48,7 +48,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         if (array_key_exists($dataid, $cityMap)) {
             $cityName = $cityMap[$dataid];
-            $apiUrl = "https://opendata.cwa.gov.tw/api/v1/rest/datastore/{$dataid}?Authorization=rdec-key-123-45678-011121314&format=JSON";
+            // import_api.php 第 47 行
+            $apiUrl = "https://opendata.cwa.gov.tw/api/v1/rest/datastore/{$dataid}?Authorization=YOUR_CWA_API_KEY&format=JSON";
+
             
             $jsonContent = @file_get_contents($apiUrl, false, $context);
             
@@ -225,4 +227,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <a href="index.php">← 返回查詢首頁</a>
     </div>
 </body>
+
 </html>
