@@ -150,11 +150,12 @@ $pass = '';     // 您的資料庫密碼
 
 ### 5. API Key 設定
 
-本系統使用 CWA 氣象開放資料，請在 `import_api.php` 中確認或替換您的 API Key：
+本系統使用中央氣象署氣象開放資料與環境署開放資料，請在 `import_api.php` 中確認或替換您的 API Key：
 
 ```php
 // import_api.php 第 47 行
 $apiUrl = "https://opendata.cwa.gov.tw/api/v1/rest/datastore/{$dataid}?Authorization=YOUR_CWA_API_KEY&format=JSON";
+$aqiApiUrl = "https://data.moenv.gov.tw/api/v2/aqx_p_432?api_key=YOUR_AQI_API_KEY&limit=1000&sort=ImportDate%20desc&format=JSON";
 
 ```
 
