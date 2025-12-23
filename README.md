@@ -197,7 +197,7 @@ UPDATE users SET role = 0 WHERE username = '您的帳號';
 ```
 
 ## 📜 License
-[MIT License](https://www.google.com/search?q=LICENSE)
+[MIT License](https://www.google.com/search?q=LICENSE)\n
 本專案為學術/練習用途，使用之氣象資料版權歸 **中央氣象署** 與 **環境部** 所有。
 
 ### 📝 TODO / 未來展望
